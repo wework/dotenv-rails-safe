@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
   }
   spec.homepage      = "https://github/wework/dotenv_safe"
   spec.license       = "MIT"
+  spec.required_ruby_version = '>= 2.2.2'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -33,8 +34,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "dotenv-rails", '~> 2.1.1'
+
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rails", "~> 4.0"
   spec.add_development_dependency "pry"
 end
