@@ -1,9 +1,9 @@
-require 'dotenv'
+require 'dotenv-rails'
 
 module DotenvSafe
   class MissingEnvVarError < StandardError; end
 
-  class Railtie < ::Rails::Railtie
+  class Railtie < Rails::Railtie
     config.before_configuration do
       # Make sure to force load environment variables for dotenv in development
       if Rails.env.development?
