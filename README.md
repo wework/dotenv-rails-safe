@@ -1,8 +1,6 @@
 # `dotenv-rails-safe`
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dotenv-rails-safe`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem is an extension of the [`dotenv`](https://github.com/bkeepers/dotenv) gem that ensures that required environment variables are set before deploying to production or running code locally. Required variables are read from `.env.example` and should be commited to source code. This is heavily inspired by [dotenv-safe](https://github.com/rolodato/dotenv-safe).
 
 ## Installation
 
@@ -20,9 +18,31 @@ Or install it yourself as:
 
     $ gem install dotenv-rails-safe
 
-## Usage
+## Example `.env.example`
 
-TODO: Write usage instructions here
+```dosini
+# .env.example, commited to repo
+SECRET=
+TOKEN=
+MISSING_KEY=
+ANOTHER_MISSING_KEY=
+# Commented out keys are not required but these are good for documentation purposes
+# KEY= 
+```
+
+```dosini
+# .env
+SECRET=topsecret
+TOKEN=
+```
+
+Since the provided `.env` file does not contain all the variables defined in
+`.env.example`, an exception is thrown:
+
+```
+Dotenv::MissingEnvVarError: Missing the following environment variables: MISSING_KEY and ANOTHER_MISSING_KEY
+```
+
 
 ## Development
 
