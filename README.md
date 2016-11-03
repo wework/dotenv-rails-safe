@@ -1,4 +1,10 @@
-# `dotenv-rails-safe`
+`dotenv-rails-safe`
+===================
+
+[![Build Status][travis-image]][travis-url]
+[![Libraries.io for GitHub][librariesio-image]][librariesio-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![MIT License][license-image]][license-url]
 
 This gem is an extension of the [`dotenv`](https://github.com/bkeepers/dotenv) gem that ensures that required environment variables are set before deploying to production or running code locally. Required variables are read from `.env.example` and should be commited to source code. This is heavily inspired by [dotenv-safe](https://github.com/rolodato/dotenv-safe).
 
