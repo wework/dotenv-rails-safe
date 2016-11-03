@@ -1,4 +1,9 @@
-# `dotenv-rails-safe`
+`dotenv-rails-safe`
+===================
+
+[![Build Status][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![MIT License][license-image]][license-url]
 
 This gem is an extension of the [`dotenv`](https://github.com/bkeepers/dotenv) gem that ensures that required environment variables are set before deploying to production or running code locally. Required variables are read from `.env.example` and should be commited to source code. This is heavily inspired by [dotenv-safe](https://github.com/rolodato/dotenv-safe).
 
@@ -52,10 +57,16 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/dotenv-rails-safe. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/wework/dotenv-rails-safe. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+[travis-image]: https://img.shields.io/travis/wework/dotenv-rails-safe.svg?branch=master
+[travis-url]: https://travis-ci.org/wework/dotenv-rails-safe
+[coveralls-image]: https://coveralls.io/repos/github/wework/dotenv-rails-safe/badge.svg?branch=test-travis
+[coveralls-url]: https://img.shields.io/travis/wework/dotenv-rails-safe/master.svg
+[license-url]: LICENSE
+[license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
