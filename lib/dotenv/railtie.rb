@@ -1,6 +1,6 @@
 require 'dotenv-rails'
 
-module DotenvSafe
+module Dotenv
   class MissingEnvVarError < StandardError; end
 
   class Railtie < Rails::Railtie
@@ -46,8 +46,8 @@ module DotenvSafe
     #
     # @return [Hash]
     def example_env_vars
-      Dotenv::Parser.call(read)
-    rescue Errno::ENOENT, Dotenv::FormatError
+      Parser.call(read)
+    rescue Errno::ENOENT, FormatError
       {}
     end
 

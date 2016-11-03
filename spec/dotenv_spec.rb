@@ -1,7 +1,7 @@
 require "spec_helper"
 
-describe DotenvSafe do
-  let(:rail_tie) { DotenvSafe::Railtie.send(:new) }
+describe Dotenv do
+  let(:rail_tie) { Dotenv::Railtie.send(:new) }
 
   describe '#check_env_vars' do
     let(:valid_env_file_contents) do
@@ -40,7 +40,7 @@ describe DotenvSafe do
         allow(rail_tie).to receive(:read).and_return(invalid_env_file_contents)
         expect {
           rail_tie.check_env_vars
-        }.to raise_error(DotenvSafe::MissingEnvVarError)
+        }.to raise_error(Dotenv::MissingEnvVarError)
       end
     end
   end

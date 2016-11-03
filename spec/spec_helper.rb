@@ -1,4 +1,4 @@
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
 require 'pry'
 require 'rails'
-require 'dotenv_safe'
+require 'dotenv-rails-safe'

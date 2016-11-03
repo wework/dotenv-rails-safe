@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'dotenv_safe/version'
+require 'dotenv/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "dotenv_safe"
-  spec.version       = DotenvSafe::VERSION
+  spec.name          = "dotenv-rails-safe"
+  spec.version       = Dotenv::VERSION
   spec.authors       = ["Ricardo Quiñones"]
   spec.email         = ["ricardo.quinones@wework.com"]
 
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
     Allows for specifying an .env.example file to check against for required environment variables
     in a rails app.
   }
-  spec.homepage      = "https://github/wework/dotenv_safe"
+  spec.homepage      = "https://github/wework/dotenv-safe"
   spec.license       = "MIT"
   spec.required_ruby_version = '>= 2.2.2'
 
