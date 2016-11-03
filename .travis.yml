@@ -2,3 +2,5 @@ sudo: false
 language: ruby
 cache: bundler
 before_install: gem install bundler -v 1.13.1
+after_success:
+  - coveralls
