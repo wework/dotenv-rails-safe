@@ -10,7 +10,7 @@ module Dotenv
         Dotenv::Railtie.load
       end
 
-      check_env_vars
+      check_env_vars unless Rails.env.test?
     end
 
     def check_env_vars
