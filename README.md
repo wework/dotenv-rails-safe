@@ -1,7 +1,7 @@
 `dotenv-rails-safe`
 ===================
 
-![Travis](travis-image)
+[![Build Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![MIT License][license-image]][license-url]
 
@@ -64,7 +64,8 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-[travis-image]: https://img.shields.io/travis/wework/dotenv-rails-safe/test-travis.svg
+[travis-image]: https://img.shields.io/travis/wework/dotenv-rails-safe.svg?branch=master
+[travis-url]: https://travis-ci.org/wework/dotenv-rails-safe
 [coveralls-image]: https://coveralls.io/repos/github/wework/dotenv-rails-safe/badge.svg?branch=test-travis
 [coveralls-url]: https://img.shields.io/travis/wework/dotenv-rails-safe/master.svg
 [license-url]: LICENSE
